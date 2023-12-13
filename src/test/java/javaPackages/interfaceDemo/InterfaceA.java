@@ -7,17 +7,20 @@ public interface InterfaceA {
     //Interface can be 100% abstraction.
     //In Interface the variable are final by defauld
 
-   /* //final variable
+    //final variable
     int cardNo=244353;
     String customerName="lota";
     int cvvNo=434;
     String billingAddress="144-25 Roosevelt Ave ";
     int exp=125;
 
-*/
+
     public  void placeOrder();
 
-    public void emailMessage();   //this is abstract method but not need to right abstract.
+    public void emailMessage();   //this is abstract method but not need to right abstract
+
+
+
 
 
 }
