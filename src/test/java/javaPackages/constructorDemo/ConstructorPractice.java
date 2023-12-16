@@ -7,17 +7,25 @@ public class ConstructorPractice {
     int batch;
 
     String location;
+/*
+what is constrattor? details of constractor?
+Ans: constractor is a special type of method whose name is same name as class name.
+note:
+The main purpose of constructor is to initiallze the object.
+construction is not return  anything.
 
+ */
 
 public ConstructorPractice(String name,int id, int batch){
 
-    this.name=name;
+    this.name=name;    //assinge my local to global variable.
     this.id=id;
    this.batch=batch;
 
 }
 
-    public ConstructorPractice(String location){
+    public ConstructorPractice(String location)  {
+
     this.location=location;
     }
 
