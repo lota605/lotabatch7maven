@@ -55,7 +55,7 @@ public class BaseClass {
             System.out.println("Please Check your driver");
         }
 
-        driver.navigate().to("https://uprightforum.tech"); //It is not wait till the driver gets loded
+        driver.navigate().to("https://uprightforum.tech"); //It is not wait till the driver gets loded+
         driver.navigate().to("https://netflix.com");
         Thread.sleep(4000);
         driver.navigate().back();
