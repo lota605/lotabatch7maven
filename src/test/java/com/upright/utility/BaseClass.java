@@ -42,7 +42,8 @@ public class BaseClass {
         System.setProperty("webdriver.gecko.driver","C:\\Users\\tm_98\\Downloads\\geckodriver-v0.33.0-win64\\geckodriver.exe");
         driver=new FirefoxDriver();
 
-        driver.get("http://lota2023.s3-website-us-east-1.amazonaws.com ");  //it will wait till the page gets loded
+        //driver.get("http://lota2023.s3-website-us-east-1.amazonaws.com");  //it will wait till the page gets loded
+
        //we did here cros browser testing
 
         if(myBrowser.equals("chrome")){
@@ -62,7 +63,7 @@ public class BaseClass {
         driver.navigate().forward();
        driver.navigate().refresh();
 
-        //QA:what are the different between driver.get va navigate?
+        //QA:what are the different between driver.get vs navigate?
         //How to ckeck current url
 
         String myCurrentURL = driver.getCurrentUrl();
