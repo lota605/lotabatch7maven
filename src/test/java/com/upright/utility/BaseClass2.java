@@ -10,12 +10,12 @@ public class BaseClass2 {
     public void myMethod() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver","C:\\Users\\tm_98\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
         driver = new ChromeDriver();
-        driver.navigate().to("http://www.ebay.com");
-        driver.navigate().to("https://www.amazon.com");
+        driver.navigate().to("http://lotamahmud.com");
+       // driver.navigate().to("https://www.amazon.com");
         Thread.sleep(3000);
-        driver.navigate().back();
-        driver.navigate().forward();
-        driver.navigate().refresh();
+       // driver.navigate().back();
+       // driver.navigate().forward();
+       // driver.navigate().refresh();
 
 
         String myCurrentURL = driver.getCurrentUrl();
