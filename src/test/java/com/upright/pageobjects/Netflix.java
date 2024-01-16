@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import java.util.concurrent.TimeUnit;
 
@@ -24,17 +25,23 @@ public class Netflix {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 
+      //  SoftAssert obj =new SoftAssert();
+
         WebElement signIn = driver.findElement(By.id("signIn"));
         signIn.click();
+        Thread.sleep(2000);
 
-        WebElement email = driver.findElement(By.id("id_userLoginId"));
-        email.sendKeys("lotamahmud989@gmail.com");
+        WebElement email = driver.findElement(By.xpath("//input[@name='userLoginId']"));
+        email.sendKeys("lota.us606@gmail.com");
+        Thread.sleep(2000);
 
-        WebElement password = driver.findElement(By.id("id_password"));
+        WebElement password = driver.findElement(By.xpath("//input[@type='password']"));
         password.sendKeys("Lm123456");
+        Thread.sleep(2000);
 
-        WebElement click_sign = driver.findElement(By.xpath("/html/body/div[1]/div/div[3]/div/div/div[1]/form/button"));
+        WebElement click_sign = driver.findElement(By.xpath("//button[@type='submit']"));
         click_sign.click();
+      //  obj.assertAll();
 
 
     }

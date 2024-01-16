@@ -26,52 +26,52 @@ public class MacysSignIn {
         driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 
         //click sign in icon
-        WebElement sign_in =driver.findElement(By.xpath("/html/body"));
-        sign_in.click();
-        Thread.sleep(2000);
+       // WebElement sign_in =driver.findElement(By.xpath(""));
+        //sign_in.click();
+       // Thread.sleep(2000);
 
         //Inserting FristName
-        WebElement name = driver.findElement(By.id("ca-profile-firstname"));
+        WebElement name = driver.findElement(By.xpath("//input[@name='ca-profile-firstname']"));
         name.sendKeys("Lota");
         Thread.sleep(2000);
 
         //Inserting LastName
-        WebElement last_name = driver.findElement(By.name("ca-profile-lastname"));
+        WebElement last_name = driver.findElement(By.xpath("//input[@name='ca-profile-lastname']"));
         last_name.sendKeys("Mahmud");
         Thread.sleep(1000);
 
         //Inserting email
-        WebElement email = driver.findElement(By.id("ca-profile-email"));
+        WebElement email = driver.findElement(By.xpath("//input[@name='email']"));
         email.sendKeys("lota.us606@gmail.com");
         Thread.sleep(1000);
 
         //Inserting password
-        WebElement password= driver.findElement(By.name("password"));
+        WebElement password= driver.findElement(By.xpath("//input[@name='password']"));
         password.sendKeys("Lm123456");
         Thread.sleep(1000);
 
          //select month
-        WebElement month =driver.findElement(By.id("ca-profile-birth-month"));
+        WebElement month =driver.findElement(By.xpath("//select[@name='ca-profile-birth-month']"));
         Select dropdown1 = new Select(month);
         dropdown1.selectByVisibleText("January");
         Thread.sleep(1000);
 
         //select dayte
-        WebElement day = driver.findElement(By.name("ca-profile-birth-day"));
+        WebElement day = driver.findElement(By.xpath("//select[@name='ca-profile-birth-day']"));
         Select dropdown2 = new Select(day);
         dropdown2.selectByIndex(6);
         Thread.sleep(1000);
 
        //click send emile
-        WebElement send_email =driver.findElement(By.id("ca-profile-send-email"));
+        WebElement send_email =driver.findElement(By.xpath("//input[@name='ca-profile-send-email']"));
         send_email.click();
         Thread.sleep(2000);
 
         //click create account
-        WebElement account =driver.findElement(By.id("ca-profile-submit"));
+        WebElement account =driver.findElement(By.xpath("//button[@id='ca-profile-submit']"));
         account.click();
 
-        driver.quit();
+       // driver.quit();
 
 
         //driver.quit();
