@@ -74,7 +74,7 @@ public class BaseClass {
         System.out.println(myTitale);
 
 
-       // driver.manage().window().maximize();   //this maximize the window
+        driver.manage().window().maximize();   //this maximize the window
     }
 
     public static void main(String[] args) throws InterruptedException, IOException {

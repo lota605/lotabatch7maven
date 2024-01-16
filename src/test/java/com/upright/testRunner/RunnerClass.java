@@ -12,7 +12,11 @@ import org.junit.runner.RunWith;
          publish = true)
 
 
-
+/*
+Cucumber option is an annotation..it takes two parametets one is feature location
+another is stepDef location.if we have lots of feature file in a package..give path only upto
+package level like src/test/java/com.upright/features
+ */
 
 
 
